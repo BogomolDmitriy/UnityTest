@@ -19,7 +19,6 @@ namespace LibraryLesson4
             }
 
             return degree;
-
         }
 
         /// <summary>
@@ -195,7 +194,6 @@ namespace LibraryLesson4
         {
             int[] arr = new int[A.ToString().Length];
             int box = 0;
-
             while (A != 0)
             {
                 int number = A % 10;
@@ -292,18 +290,18 @@ namespace LibraryLesson4
                     }
                     B = B / 10;
                 }
+
                 A = A / 10;
             }
             if (Control > 0)
             {
                 return "Yes";
             }
+
             else
             {
                 return "No";
             }
-
         }
-
     }
 }
