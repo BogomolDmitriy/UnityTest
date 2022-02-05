@@ -189,19 +189,26 @@ namespace LibraryLesson5
 
 		public static int[] Task9(int[] arr)
 		{
-			for (int i = 0; i < arr.Length - 1; i++)
-			{
-				for (int j = i + 1; j < arr.Length; j++)
+			if (arr.Length <= 1)
+            {
+				return arr;
+			}
+
+			else
+            {
+				for (int i = 0; i < arr.Length - 1; i++)
 				{
-					if (arr[i] > arr[j])
+					for (int j = i + 1; j < arr.Length; j++)
 					{
-						Swap(ref arr[i], ref arr[j]);
+						if (arr[i] > arr[j])
+						{
+							Swap(ref arr[i], ref arr[j]);
+						}
 					}
 				}
 
+				return arr;
 			}
-
-			return arr;
 		}
 
 		public static int [] sortingMachiv (int[] arr)

@@ -85,6 +85,9 @@ namespace Lesson5array
         [TestCase(new[] { 83, 96, 84, 7, 29, 75 }, new[] { 7, 29, 75, 83, 84, 96 })]
         [TestCase(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 })]
         [TestCase(new[] { 1, 2, 0, 4, }, new[] { 0, 1, 2, 4 })]
+        [TestCase(new[] { 1, -3, 0, -28, }, new[] { -28, -3, 0, 1 })]
+        [TestCase(new[] { 1 }, new[] { 1 })]
+        [TestCase(new int[] { }, new int[] { })]
 
         public void Task9(int[] arr, int[] expected)
         {
