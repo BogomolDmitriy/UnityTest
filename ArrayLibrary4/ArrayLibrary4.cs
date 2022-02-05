@@ -203,5 +203,33 @@ namespace LibraryLesson5
 
 			return arr;
 		}
+
+		public static int [] sortingMachiv (int[] arr)
+        {
+			if (arr.Length<=1)
+            {
+				return arr;
+			}
+
+			else
+            {
+				int counter;
+				do
+                {
+					counter = 0;
+					for (int i = 1; i < arr.Length; i++)
+					{
+						if (arr[i - 1] > arr[i])
+						{
+							Swap(ref arr[i - 1], ref arr[i]);
+							counter++;
+						}
+					}
+				}
+				while (counter > 0);
+				return arr;
+			}
+
+		}
 	}
 }
